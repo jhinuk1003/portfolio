@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&family=Space+Grotesk:wght@400;500;600;700&family=VT323&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg-dark: #0a0b12;
+  --bg-card: #121526;
+  --bg-card-hover: #191e36;
+  --border-pixel: #2b3252;
+  --border-neon: #6366f1;
+  --accent-cyan: #00f0ff;
+  --accent-pink: #ff3377;
+  --accent-yellow: #facc15;
+  --accent-green: #10b981;
+  --accent-purple: #a855f7;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: #e2e8f0;
+  font-family: 'Space Grotesk', sans-serif;
+  overflow-x: hidden;
+  image-rendering: pixelated;
+}
+
+/* Custom Typography */
+.font-pixel {
+  font-family: 'Press Start 2P', monospace;
+}
+
+.font-silkscreen {
+  font-family: 'Silkscreen', cursive;
+}
+
+.font-terminal {
+  font-family: 'VT323', monospace;
+}
+
+/* Pixel Borders & Shadows */
+.pixel-box {
+  position: relative;
+  background: #111425;
+  border: 3px solid #3b4268;
+  box-shadow: 
+    0 -3px 0 0 #3b4268,
+    0 3px 0 0 #0d0f1c,
+    -3px 0 0 0 #3b4268,
+    3px 0 0 0 #0d0f1c,
+    0 8px 24px rgba(0, 0, 0, 0.6);
+}
+
+.pixel-box-cyan {
+  border-color: #00f0ff;
+  box-shadow: 
+    0 -2px 0 0 #00f0ff,
+    0 2px 0 0 #0088aa,
+    -2px 0 0 0 #00f0ff,
+    2px 0 0 0 #0088aa,
+    0 0 16px rgba(0, 240, 255, 0.25);
+}
+
+.pixel-box-pink {
+  border-color: #ff3377;
+  box-shadow: 
+    0 -2px 0 0 #ff3377,
+    0 2px 0 0 #991144,
+    -2px 0 0 0 #ff3377,
+    2px 0 0 0 #991144,
+    0 0 16px rgba(255, 51, 119, 0.25);
+}
+
+.pixel-box-yellow {
+  border-color: #facc15;
+  box-shadow: 
+    0 -2px 0 0 #facc15,
+    0 2px 0 0 #854d0e,
+    -2px 0 0 0 #facc15,
+    2px 0 0 0 #854d0e,
+    0 0 16px rgba(250, 204, 21, 0.2);
+}
+
+.pixel-box-green {
+  border-color: #10b981;
+  box-shadow: 
+    0 -2px 0 0 #10b981,
+    0 2px 0 0 #064e3b,
+    -2px 0 0 0 #10b981,
+    2px 0 0 0 #064e3b,
+    0 0 16px rgba(16, 185, 129, 0.25);
+}
+
+/* Pixel Buttons */
+.pixel-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  background: #1e243d;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 3px solid #4f5882;
+  box-shadow: 
+    inset -3px -3px 0 0 #0f1220,
+    inset 3px 3px 0 0 #7b88bd,
+    0 4px 0 0 #000000;
+  transition: all 0.08s ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+.pixel-btn:hover {
+  background: #283152;
+  border-color: #00f0ff;
+  color: #00f0ff;
+  box-shadow: 
+    inset -3px -3px 0 0 #0f1220,
+    inset 3px 3px 0 0 #5fe8ff,
+    0 4px 0 0 #000000,
+    0 0 12px rgba(0, 240, 255, 0.4);
+}
+
+.pixel-btn:active {
+  transform: translate(0, 3px);
+  box-shadow: 
+    inset 3px 3px 0 0 #0f1220,
+    inset -3px -3px 0 0 #7b88bd,
+    0 1px 0 0 #000000;
+}
+
+.pixel-btn-accent {
+  background: #ff3377;
+  border-color: #ff88aa;
+  color: #ffffff;
+  box-shadow: 
+    inset -3px -3px 0 0 #990033,
+    inset 3px 3px 0 0 #ff99bb,
+    0 4px 0 0 #000000;
+}
+
+.pixel-btn-accent:hover {
+  background: #ff4785;
+  color: #ffffff;
+  box-shadow: 
+    inset -3px -3px 0 0 #990033,
+    inset 3px 3px 0 0 #ffffff,
+    0 4px 0 0 #000000,
+    0 0 14px rgba(255, 51, 119, 0.6);
+}
+
+.pixel-btn-accent:active {
+  transform: translate(0, 3px);
+  box-shadow: 
+    inset 3px 3px 0 0 #990033,
+    0 1px 0 0 #000000;
+}
+
+.pixel-btn-cyan {
+  background: #00f0ff;
+  border-color: #99f6ff;
+  color: #080d1a;
+  font-weight: bold;
+  box-shadow: 
+    inset -3px -3px 0 0 #008899,
+    inset 3px 3px 0 0 #d0faff,
+    0 4px 0 0 #000000;
+}
+
+.pixel-btn-cyan:hover {
+  background: #38f4ff;
+  color: #000000;
+  box-shadow: 
+    inset -3px -3px 0 0 #008899,
+    inset 3px 3px 0 0 #ffffff,
+    0 4px 0 0 #000000,
+    0 0 16px rgba(0, 240, 255, 0.8);
+}
+
+.pixel-btn-cyan:active {
+  transform: translate(0, 3px);
+  box-shadow: 
+    inset 3px 3px 0 0 #008899,
+    0 1px 0 0 #000000;
+}
+
+/* CRT Scanlines Filter Overlay */
+.crt-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+  background: linear-gradient(
+    rgba(18, 16, 38, 0) 50%, 
+    rgba(0, 0, 0, 0.25) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.03),
+    rgba(0, 255, 0, 0.01),
+    rgba(0, 0, 255, 0.03)
+  );
+  background-size: 100% 3px, 6px 100%;
+  opacity: 0.8;
+}
+
+/* CRT Screen Curvature Edge Vignette */
+.crt-vignette {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9998;
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.8);
+}
+
+/* 8-bit Pixel Badges */
+.pixel-tag {
+  display: inline-block;
+  padding: 3px 8px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.6rem;
+  letter-spacing: -0.5px;
+  border: 2px solid;
+  border-radius: 0px;
+}
+
+/* 8-bit Progress Bar */
+.pixel-bar-container {
+  border: 3px solid #3b4268;
+  padding: 3px;
+  background: #090b14;
+  box-shadow: inset 0 0 8px #000;
+}
+
+.pixel-bar-fill {
+  height: 100%;
+  background-size: 16px 16px;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 8px,
+    rgba(255, 255, 255, 0.15) 8px,
+    rgba(255, 255, 255, 0.15) 16px
+  );
+}
+
+/* Custom Pixel Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d0f1a;
+  border-left: 2px solid #232840;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3b4268;
+  border: 2px solid #6366f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff3377;
+}
+
+/* Pixel text blinking cursor */
+@keyframes blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+.animate-pixel-blink {
+  animation: blink 0.9s infinite;
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: float 3.5s ease-in-out infinite;
+}
