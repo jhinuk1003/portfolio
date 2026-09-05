@@ -119,6 +119,53 @@ export default function ProjectsSection() {
       githubUrl: "https://github.com/jhinuk1003/logbook_anomaly_detection",
       liveUrl: "logbook.itsmejhinuk.in/",
     },
+    {
+      id: "bloomeda",
+      title: "BloomEDA",
+      subtitle: "Bohemian Botanical Automated EDA & ML Artifact Inspector",
+      bossName: "BOSS: UNTRUSTED DESERIALIZATION & BLACK-BOX ML ARTIFACTS",
+      clearedBadge: "VICTORY // BOTANICAL DATA LABORATORY",
+      accolades: [
+        "🌸 Production-Grade Next.js 16 + FastAPI + Scikit-Learn Architecture",
+        "🛡️ Zero-Trust AST Restricted Sandbox & Subprocess Isolation",
+        "🌿 Handcrafted Bohemian Botanical Theme & Blooming Garden Animations",
+      ],
+      description:
+        "An elegant botanical laboratory for exploring serialized machine-learning artifacts and tabular datasets. Users upload Python .pkl / .pickle files to securely uncover their structure, statistics, anomalies, and ML pipelines, blooming into an interactive botanical data garden dashboard with zero-trust sandboxed execution.",
+      architecture: [
+        "Next.js 16 and React frontend with custom Bohemian Botanical styling, Framer Motion blooming garden loading states, and interactive Recharts visualizations.",
+        "FastAPI backend gateway orchestrating file upload validation, background worker scheduling, and progressive status polling.",
+        "Isolated Python analysis subprocess with RestrictedUnpickler AST module whitelisting, actively blocking arbitrary code execution attacks (os.system, subprocess, eval).",
+        "Deep exploratory data analysis engine calculating continuous histograms, Tukey 1.5×IQR outlier bounds, Pearson correlation heatmaps, and an explainable 0–100 data quality ledger.",
+        "Safe ML introspection engine extracting hyperparameters, fitted schema attributes, and rendering interactive multi-stage pipeline flowcharts.",
+      ],
+      techStack: [
+        "Next.js",
+        "React.js",
+        "TypeScript",
+        "Python",
+        "FastAPI",
+        "Pandas",
+        "Scikit-Learn",
+        "NumPy",
+        "Recharts",
+        "Framer Motion",
+        "Tailwind CSS",
+        "EDA",
+      ],
+      keyFeatures: [
+        "Zero-Trust Sandboxed Deserialization with RestrictedUnpickler AST Whitelist",
+        "Interactive Blooming Flower Loading Screen with 8 Live Analytical Milestones",
+        "Deep Tabular Profiling with Continuous Histograms, Quartiles, Skewness & Kurtosis",
+        "Interactive Scikit-Learn Pipeline Flowchart & ColumnTransformer Visualizer",
+        "Explainable Botanical Data Quality Score (0–100) with Transparent Deduction Ledger",
+        "Server-Side Paginated, Searchable, and Sortable Data Preview Table",
+        "One-Click Multi-Format Export (Structured JSON, CSV Summary, and Printable Report)",
+      ],
+      themeColor: "#c86d51",
+      githubUrl: "https://github.com/jhinuk1003/BloomEDA",
+      liveUrl: "bloomeda.itsmejhinuk.in/",
+    },
   ];
 
   const handleOpenModal = (project: Project) => {
