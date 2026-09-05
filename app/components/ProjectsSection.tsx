@@ -87,8 +87,8 @@ export default function ProjectsSection() {
         "Zero Loss Offline Data Synchronization for Underground Shafts",
       ],
       themeColor: "#00f0ff",
-      githubUrl: "https://github.com/jhinuk1003/mine-guard",
-      liveUrl: "https://mine-guard.vercel.app",
+      githubUrl: "https://github.com/jhinuk1003/Mineguard",
+      liveUrl: "https://mineguard.itsmejhinuk.in/",
     },
     {
       id: "logbook",
