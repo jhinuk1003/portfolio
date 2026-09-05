@@ -116,8 +116,8 @@ export default function ProjectsSection() {
         "Custom Regex Filter Rule Engine & Threshold Tuning",
       ],
       themeColor: "#facc15",
-      githubUrl: "https://github.com/jhinuk1003/logbook-anomaly-detection",
-      liveUrl: "https://logbook-telemetry.vercel.app",
+      githubUrl: "https://github.com/jhinuk1003/logbook_anomaly_detection",
+      liveUrl: "logbook.itsmejhinuk.in/",
     },
   ];
 
