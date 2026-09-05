@@ -117,7 +117,7 @@ export default function ProjectsSection() {
       ],
       themeColor: "#facc15",
       githubUrl: "https://github.com/jhinuk1003/logbook_anomaly_detection",
-      liveUrl: "logbook.itsmejhinuk.in/",
+      liveUrl: "https://logbook.itsmejhinuk.in/",
     },
     {
       id: "bloomeda",
@@ -164,7 +164,7 @@ export default function ProjectsSection() {
       ],
       themeColor: "#c86d51",
       githubUrl: "https://github.com/jhinuk1003/BloomEDA",
-      liveUrl: "bloomeda.itsmejhinuk.in/",
+      liveUrl: "https://bloomeda.itsmejhinuk.in/",
     },
   ];
 
